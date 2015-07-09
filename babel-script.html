@@ -1,0 +1,26 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="babel-import.html">
+
+<dom-module id="babel-script">
+  <template>
+    <content id="content"></content>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'babel-script',
+      extends: 'script',
+      _babelTransform: function(code) {
+        console.log(babel.transform(code).code);
+      },
+      _babelRun: function(code) {
+        console.log(babel.transform(code).code);
+        babel.run(code);
+      },
+      ready: function () {
+        var js = this.$.content._distributedNodes[0].data;
+        this._babelRun(js);
+      }
+    });
+  </script>
+</dom-module>

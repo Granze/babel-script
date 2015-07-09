@@ -1,0 +1,20 @@
+{
+  "name": "babel-script",
+  "version": "0.0.1",
+  "description": "A Polymer element that extends the HTML script tag to support ES2015 +",
+  "license": "MIT",
+  "main": "babel-script.html",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "es6",
+    "es2015"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
