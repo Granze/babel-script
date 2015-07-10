@@ -18,11 +18,10 @@
         babel.run(code);
       },
       created: function() {
-        console.log('created');
-      },
-      ready: function () {
-        var js = this.$.content._distributedNodes[0].data;
+        var js = Polymer.dom(this.root).innerHTML;
         this._babelRun(js);
+        console.log(Polymer.dom(this.root));
+        Polymer.dom(this.root).innerHTML = '';
       }
     });
   </script>
