@@ -1,4 +1,4 @@
-#[WIP]&lt;babel-script&gt;
+#[WIP] &lt;script is="babel-script"&gt;
 > A Polymer element that extends the HTML script tag to support ES2015 and more
 
 ##Warning:
