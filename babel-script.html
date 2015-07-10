@@ -17,6 +17,9 @@
         console.log(babel.transform(code).code);
         babel.run(code);
       },
+      created: function() {
+        console.log('created');
+      },
       ready: function () {
         var js = this.$.content._distributedNodes[0].data;
         this._babelRun(js);

@@ -8,9 +8,11 @@
   </head>
   <body>
     <script is="babel-script">
-      const a = "a";
+      const n = [1,2,3];
 
-      alert(`1 + 2 is equal to ${1 + 2}`);
+      var total = n.reduce((previousValue, currentValue) => previousValue + currentValue);
+
+      alert(`1 + 2 + 3 is equal to ${total}`);
     </script>
   </body>
 </html>
