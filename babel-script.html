@@ -10,9 +10,6 @@
     Polymer({
       is: 'babel-script',
       extends: 'script',
-      _babelTransform: function(code) {
-        console.log(babel.transform(code).code);
-      },
       _babelRun: function(code) {
         console.log(babel.transform(code).code);
         babel.run(code);
@@ -20,7 +17,6 @@
       created: function() {
         var js = Polymer.dom(this.root).innerHTML;
         this._babelRun(js);
-        console.log(Polymer.dom(this.root));
         Polymer.dom(this.root).innerHTML = '';
       }
     });
