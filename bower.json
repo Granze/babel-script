@@ -12,9 +12,16 @@
   ],
   "ignore": [
     "**/.*",
-    "bower_components"
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
-  }
+  },
+  "homepage": "https://github.com/Granze/babel-script",
+  "authors": [
+    "Maurizio Mangione <granzebru@gmail.com>"
+  ]
 }
